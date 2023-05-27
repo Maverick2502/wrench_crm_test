@@ -4,6 +4,10 @@
   position: fixed;
   top: 0;
 
+  // For some reasons on MacOS input from the Main page overrides the Header on scroll.
+  // Because of it, z-index of the Header is increased
+  z-index: 2;
+
   display: flex;
   justify-content: space-between;
 
