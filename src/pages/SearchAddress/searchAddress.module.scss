@@ -137,3 +137,7 @@ button:disabled {
   pointer-events: none;
   user-select: none;
 }
+
+input:focus {
+  opacity: 0.8;
+}
