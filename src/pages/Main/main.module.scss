@@ -1,0 +1,38 @@
+@import "../../styles/index.scss";
+
+p {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  margin-bottom: 12px;
+
+  @media (max-width: $breakpoint-sm) {
+    font-size: 16px;
+  }
+}
+
+.news {
+  @include breadcrumb();
+}
+
+.updates {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  margin-bottom: 24px;
+  display: flex;
+
+  @media (max-width: $breakpoint-sm) {
+    font-size: 16px;
+  }
+}
+
+.anchorTag {
+  color: #002bc5;
+
+  &:hover {
+    opacity: $opacity-8;
+  }
+}

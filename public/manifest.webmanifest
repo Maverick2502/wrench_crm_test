@@ -1,0 +1,16 @@
+{
+  "short_name": "Глюкоза",
+  "name": "Личный кабинет для управления данными.",
+  "description": "Управляйте легко и быстро данными",
+  "start_url": "/user_profile",
+  "display": "fullscreen",
+  "theme_color": "#4f27bf",
+  "background_color": "#4f27bf",
+  "icons": [
+    {
+      "src": "logo.svg",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/svg+xml"
+    }
+  ]
+}

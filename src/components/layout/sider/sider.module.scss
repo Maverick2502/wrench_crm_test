@@ -1,0 +1,135 @@
+@import "../../../styles/index.scss";
+
+.nav {
+  height: 100vh;
+  width: 300px;
+  overflow-y: auto;
+
+  background: rgba(255, 255, 255, 0.05);
+  box-shadow: 0px 0px 5px rgba(2, 0, 96, 0.25);
+
+  padding-top: 25px;
+  padding-left: 32px;
+
+  @media (max-width: $breakpoint-md) {
+    display: none;
+  }
+
+  &__title {
+    margin-bottom: 32px;
+
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #1c1c1e;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+
+    margin-bottom: 40px;
+
+    &:hover {
+      opacity: $opacity-8;
+    }
+
+    &-active {
+      width: 3px;
+      height: 37px;
+
+      background-color: $primary-color;
+
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+
+    &-inactive {
+      width: 3px;
+      height: 37px;
+
+      background-color: #fff;
+
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+    }
+  }
+
+  &__link {
+    display: flex;
+    align-items: center;
+
+    gap: 16px;
+    max-height: 32px;
+
+    width: 100%;
+
+    cursor: pointer;
+
+    & > span {
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 24px;
+
+      color: #1c1c1e;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+
+    cursor: pointer;
+
+    margin-bottom: 32px;
+
+    &:hover {
+      opacity: $opacity-8;
+
+      transition: $transition;
+    }
+  }
+
+  &__subMenu {
+    margin-left: 46px;
+    margin-bottom: 32px;
+
+    &__link {
+      display: flex;
+      align-items: center;
+
+      margin-bottom: 32px;
+
+      gap: 14px;
+      max-height: 48px;
+
+      cursor: pointer;
+
+      &:hover {
+        opacity: $opacity-8;
+        transition: $transition;
+      }
+
+      & > span {
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 24px;
+      }
+    }
+  }
+}
+
+.toggle {
+  margin-right: 20px;
+  transform: rotate(0deg);
+  transition: all 0.5s ease-in-out;
+
+  &-active {
+    margin-right: 20px;
+
+    transform: rotate(180deg);
+
+    transition: all 0.5s ease-in-out;
+  }
+}
