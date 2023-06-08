@@ -82,7 +82,12 @@ function searchAddress() {
           <h2 className={classes["search__result__title"]}>Адреса</h2>
           <ul>
             {data?.map((item) => (
-              <li className={classes["search__result__list"]}>{item.value}</li>
+              <li
+                key={item.data?.city_fias_id}
+                className={classes["search__result__list"]}
+              >
+                {item.value}
+              </li>
             ))}
           </ul>
         </div>

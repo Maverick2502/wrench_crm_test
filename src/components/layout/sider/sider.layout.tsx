@@ -34,7 +34,7 @@ function SiderMemoized() {
 
       {/* Only two routes have path: Главная и Поиск адресов. The rest are for the sake of DEMO/UI. */}
       <ul>
-        <li className={classes["nav__list"]}>
+        <li key="main" className={classes["nav__list"]}>
           <NavLink to="/" className={classes["nav__link"]}>
             <img
               draggable={false}
@@ -54,7 +54,7 @@ function SiderMemoized() {
           />
         </li>
 
-        <li className={classes["nav__list"]}>
+        <li key="address" className={classes["nav__list"]}>
           <NavLink to="/address" className={classes["nav__link"]}>
             <img
               draggable={false}
@@ -74,7 +74,7 @@ function SiderMemoized() {
           />
         </li>
 
-        <li className={classes["nav__list"]}>
+        <li key="tables" className={classes["nav__list"]}>
           <a className={classes["nav__link"]}>
             <img
               draggable={false}
@@ -87,7 +87,7 @@ function SiderMemoized() {
           </a>
         </li>
 
-        <li className={classes["nav__list"]}>
+        <li key="calendar" className={classes["nav__list"]}>
           <a className={classes["nav__link"]}>
             <img
               draggable={false}
@@ -100,7 +100,7 @@ function SiderMemoized() {
           </a>
         </li>
 
-        <li className={classes["nav__list"]}>
+        <li key="maps" className={classes["nav__list"]}>
           <a className={classes["nav__link"]}>
             <img
               draggable={false}
@@ -113,7 +113,7 @@ function SiderMemoized() {
           </a>
         </li>
 
-        <li className={classes["nav__list"]}>
+        <li key="widgets" className={classes["nav__list"]}>
           <a className={classes["nav__link"]}>
             <img
               draggable={false}
@@ -126,7 +126,7 @@ function SiderMemoized() {
           </a>
         </li>
 
-        <li>
+        <li key="settings">
           <div onClick={toggleSubMenu} className={classes["nav__menu"]}>
             <a className={classes["nav__link"]}>
               <img
@@ -172,7 +172,7 @@ function SiderMemoized() {
           )}
         </li>
 
-        <li className={classes["nav__list"]}>
+        <li key="logout" className={classes["nav__list"]}>
           <a className={classes["nav__link"]}>
             <img
               draggable={false}

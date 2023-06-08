@@ -104,4 +104,4 @@ interface AddressesResponse {
   data?: Data;
 }
 
-export { AddressesResponse };
+export type { AddressesResponse };

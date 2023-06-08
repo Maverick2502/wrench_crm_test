@@ -7,10 +7,10 @@ import classes from "./wrapper.module.scss";
 function WrapperMemo() {
   return (
     <Fragment>
-      <Header />
+      <Header key="header" />
       <div className={classes["wrapper"]}>
         <div>
-          <Sider />
+          <Sider key="sider" />
         </div>
         <main className={classes["main"]}>
           <div style={{ height: "80px" }} />
